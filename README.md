@@ -1,4 +1,7 @@
 1) **Sticky bits -**
+------------------------
+
+
 #Look for sticky bits in the file system - SUID/GUID
    - find / -perm -u=s -type f 2>/dev/null
    - ls -l /bin/su
