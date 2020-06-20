@@ -1,7 +1,7 @@
 1) **Sticky bits -**
 
-Look for sticky bits in the file system - SUID/GUID
-   - find / -perm -u=s -type f 2>/dev/null <br />
+     > Look for sticky bits in the file system - SUID/GUID
+     - find / -perm -u=s -type f 2>/dev/null <br />
      > ls -l /bin/su <br />
      > rw**s**r-xr-x 1 root root 40128 May 17  2012 /bin/su <br />
      > above indicates "s" or SUID bit is set.<br />
@@ -9,7 +9,7 @@ Look for sticky bits in the file system - SUID/GUID
 
 2) **Checking Process running every now and then if any.**
 
-    > Credit: @ippsec Nineveh Video - https://www.youtube.com/watch?v=K9DKULxSBK4
+    > Credit: @ippsec Nineveh Video on YouTube
 
     > #!/bin/bash <br />
     > IFS=$'\n' <br />
