@@ -10,8 +10,8 @@
 
 2) **Checking Process running every now and then if any.**
 
-    > Credit: @ippsec Nineveh Video on YouTube
-     <br />
+     Credit: @ippsec Nineveh Video on YouTube
+     
     > #!/bin/bash <br />
     > IFS=$'\n' <br />
     > old_process=$(ps -eo command) <br />
