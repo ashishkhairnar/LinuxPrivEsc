@@ -11,12 +11,12 @@ Look for sticky bits in the file system - SUID/GUID
 ----------------------------------------------------------
 Credit: @ippsec Nineveh Video - https://www.youtube.com/watch?v=K9DKULxSBK4
 
-> #!/bin/bash
-> IFS=$'\n'
-> old_process=$(ps -eo command)
-> while true; do
-> 	new_process=$(ps -eo command)
-> 	diff <(echo "$old_process") <(echo "$new_process")
-> 	sleep 1
-> 	old_process=$new_process
-> done
+> #!/bin/bash <br />
+> IFS=$'\n' <br />
+> old_process=$(ps -eo command) <br />
+> while true; do <br />
+> 	new_process=$(ps -eo command) <br />
+> 	diff <(echo "$old_process") <(echo "$new_process") <br />
+> 	sleep 1 <br />
+> 	old_process=$new_process <br />
+> done  <br />
