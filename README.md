@@ -1,5 +1,5 @@
 1) **Sticky bits -**
-------------------------
+
 Look for sticky bits in the file system - SUID/GUID
    - find / -perm -u=s -type f 2>/dev/null <br />
      > ls -l /bin/su <br />
@@ -8,7 +8,7 @@ Look for sticky bits in the file system - SUID/GUID
 
 
 2) **Checking Process running every now and then if any.**
-----------------------------------------------------------
+
 Credit: @ippsec Nineveh Video - https://www.youtube.com/watch?v=K9DKULxSBK4
 
 > #!/bin/bash <br />
