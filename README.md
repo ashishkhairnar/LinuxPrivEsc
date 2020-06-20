@@ -6,6 +6,7 @@ Look for sticky bits in the file system - SUID/GUID
      > rw**s**r-xr-x 1 root root 40128 May 17  2012 /bin/su <br />
      > above indicates "s" or SUID bit is set.<br />
 
+
 2) **Checking Process running every now and then if any. Credit: @ippsec Nineveh Video**
 ------------------------------------------------------------------------------------------------
 
