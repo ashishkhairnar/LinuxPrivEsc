@@ -9,14 +9,14 @@ Look for sticky bits in the file system - SUID/GUID
 
 2) **Checking Process running every now and then if any.**
 
-Credit: @ippsec Nineveh Video - https://www.youtube.com/watch?v=K9DKULxSBK4
+    > Credit: @ippsec Nineveh Video - https://www.youtube.com/watch?v=K9DKULxSBK4
 
-> #!/bin/bash <br />
-> IFS=$'\n' <br />
-> old_process=$(ps -eo command) <br />
-> while true; do <br />
-> 	new_process=$(ps -eo command) <br />
-> 	diff <(echo "$old_process") <(echo "$new_process") <br />
-> 	sleep 1 <br />
-> 	old_process=$new_process <br />
-> done  <br />
+    > #!/bin/bash <br />
+    > IFS=$'\n' <br />
+    > old_process=$(ps -eo command) <br />
+    > while true; do <br />
+    > 	new_process=$(ps -eo command) <br />
+    > 	diff <(echo "$old_process") <(echo "$new_process") <br />
+    > 	sleep 1 <br />
+    > 	old_process=$new_process <br />
+    > done  <br />
