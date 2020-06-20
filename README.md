@@ -7,15 +7,15 @@ Look for sticky bits in the file system - SUID/GUID
      > above indicates "s" or SUID bit is set.<br />
 
 
-2) **Checking Process running every now and then if any. Credit: @ippsec Nineveh Video**
-------------------------------------------------------------------------------------------------
-
-#!/bin/bash
-IFS=$'\n'
-old_process=$(ps -eo command)
-while true; do
-	new_process=$(ps -eo command)
-	diff <(echo "$old_process") <(echo "$new_process")
-	sleep 1
-	old_process=$new_process
-done
+2) **Checking Process running every now and then if any.**
+----------------------------------------------------------
+Credit: @ippsec Nineveh Video - https://www.youtube.com/watch?v=K9DKULxSBK4
+>#!/bin/bash
+>IFS=$'\n'
+>old_process=$(ps -eo command)
+>while true; do
+>	new_process=$(ps -eo command)
+>	diff <(echo "$old_process") <(echo "$new_process")
+>	sleep 1
+>	old_process=$new_process
+>done
